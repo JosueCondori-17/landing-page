@@ -1,0 +1,255 @@
+/* estilos para headeer*/
+.l-header{
+    display: flex;
+    padding: 10px 20px;
+}
+.l-logo{
+    flex-grow: 1;
+    display: flex;
+    place-items: center;
+}
+.l-nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+.l-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease all;
+}
+.l-btn-login{
+    background-color: #2F17FF;
+    font-weight: normal;
+}
+.l-btn-bar{
+    display: none;
+}
+@media (width <= 520px) {
+    .l-logo img{
+        display: none;
+    }
+    .l-nav .l-link{
+        display: none;
+    }
+    .l-btn-bar{
+        display: flex;
+        transition: 0.5s ease all;
+    }
+}
+
+/* estilos para el cuerpo*/
+.l-section{
+    min-height: 400px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.l-main-one{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s ease all;
+}
+.l-main-one h1{
+    color: white;
+    font-size: 80px;
+    transition: 0.5s ease all;
+}
+.l-main-one input{
+    background-color: transparent;
+    border: 2px solid #2F17FF;
+    min-width: 200px;
+    width: 375px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #2F17FF;
+    transition: 0.5s ease all;
+}
+.l-main-one input:focus{
+    border: 2px solid #3BB9F9;
+	outline: none;
+	box-shadow: 3px 0px 30px #a3a3a366;
+}
+.l-main-one div{
+    min-width: 200px;
+    width: 375px;
+    display: flex;
+    justify-content: end;
+    padding: 15px 0px;
+    transition: 0.5s ease all;
+}
+.l-main-one button{
+    background: #2F17FF;
+    color: white;
+    height: 25px;
+    width: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.l-main-one button:focus{
+    border: 2px solid #3BB9F9;
+	outline: none;
+	box-shadow: 3px 0px 30px #a3a3a366;
+}
+
+@media (width <= 440px) {
+    .l-main-one input{
+        width: 300px;
+        transition: 0.5s ease all;
+    }
+    .l-main-one div{
+        width: 300px;
+        transition: 0.5s ease all;
+    }
+}
+@media (width <= 320px) {
+    .l-main-one h1{
+        font-size: 50px;
+        transition: 0.5s ease all;
+    }
+    .l-main-one input{
+        width: 240px;
+        transition: 0.5s ease all;
+    }
+    .l-main-one div{
+        width: 240px;
+        transition: 0.5s ease all;
+    }
+}
+
+
+.l-main-two{
+    transition: 1s ease all;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.l-main-two p{
+    color: #3BB9F9;
+    max-width: 450px;
+}
+.l-main-two img{
+    transition: 0.5s ease all;
+}
+
+@media (width <= 600px) {
+    .l-main-two img{
+        width: 350px;
+        height: 200px;
+        transition: 0.5s ease all;
+    }
+    .l-main-two{
+        align-items: center;
+    }
+    .l-main-two p{
+        text-align: center;
+    }
+}
+@media (width <= 495px) {
+    .l-main-two img{
+        width: 200px;
+        height: 150px;
+        transition: 0.5s ease all;
+    }
+    .l-main-two{
+        align-items: center;
+    }
+    .l-main-two p{
+        text-align: center;
+    }
+}
+@media (width <= 340px) {
+    .l-main-two img{
+        width: 150px;
+        height: 100px;
+        transition: 0.5s ease all;
+    }
+    .l-main-two{
+        align-items: center;
+    }
+    .l-main-two p{
+        text-align: center;
+    }
+}
+/*estilos para sidebar*/
+.l-sidebar{
+    background: #050823;
+    width: auto;
+}
+.l-sidebar div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 0px 10px ;
+    gap: 10px;
+}
+
+/* estilos para el footer*/
+.l-footer{
+    display: flex;
+    padding: 25px 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.l-footer div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-bottom: 1px solid #2F17FF;
+    padding: 10px;
+}
+/* estilos login*/
+.l-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.l-login h1{
+    color: white;
+    font-size: 40px;
+    transition: 0.5s ease all;
+}
+.l-login input{
+    background-color: transparent;
+    border: 2px solid #2F17FF;
+    min-width: 200px;
+    width: 375px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #2F17FF;
+    transition: 0.5s ease all;
+    margin-bottom: 25px;
+}
+.l-login input:focus{
+    border: 2px solid #3BB9F9;
+	outline: none;
+	box-shadow: 3px 0px 30px #a3a3a366;
+}
+.l-login p{
+    width: 250px;
+    text-align: center;
+    color: #3BB9F9;
+}
+.l-login div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 380px;
+}
+.l-btn-log{
+    flex-grow: 1;
+}
